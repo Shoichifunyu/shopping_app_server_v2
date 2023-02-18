@@ -1,0 +1,27 @@
+{
+  "name": "shopping_app_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover node_modules/mocha/bin/_mocha --print none --report html -- tests/*.js -R tap",
+    "testdebug": "mocha --debug --debug-brk ./tests/*.js",
+    "start": "node chatbot_post.js",
+    "debug": "node-debug server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "istanbul": "^0.4.5",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "socket.io": "^4.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  }
+}
